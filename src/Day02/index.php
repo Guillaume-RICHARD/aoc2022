@@ -1,7 +1,7 @@
 <?php
 
 // Lire le fichier Txt
-$fichier = file("../../inputs/Day01/input-day1.txt");
+$fichier = file("../../inputs/Day1/input-day01.txt");
 $total = count($fichier);
 
 $calories = [];
@@ -23,7 +23,6 @@ foreach ($calories as $key => $elf) {
 
     $elve++;
 }
-
 unset($calories);
 $calories = $tmp;
 rsort($calories, SORT_NUMERIC);
